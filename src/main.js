@@ -63,6 +63,8 @@ function fetchQuery(searchQuery) {
           messageSize: 10.5,
           position: 'topRight',
         });
+        // Якщо запит не валідний, тоді очищуємо розмітку
+        galleryContainer.innerHTML = '';
       } else {
         // console.log(data.hits);
         displayImages(data.hits);
